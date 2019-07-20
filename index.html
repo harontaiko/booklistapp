@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="haron taiko" />
+    <meta
+      name="description"
+      content="this site shows a booklist app made in pure vjs and basic html and css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>BookList App</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> My
+        <span class="text-primary">Book</span>List
+      </h1>
+      <!--Alert div in js-->
+      <form action="" id="book-form">
+        <div class="form-group">
+          <label for="title">Book title</label>
+          <input type="text" class="form-control" id="title" />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" class="form-control" id="author" />
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN #</label>
+          <input type="text" class="form-control" id="isbn" />
+        </div>
+        <input type="submit" value="Add Book" class="btn btn-info btn-block" />
+      </form>
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>Book title</th>
+            <th>Author</th>
+            <th>ISBN #</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="./js/fontawesome.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
